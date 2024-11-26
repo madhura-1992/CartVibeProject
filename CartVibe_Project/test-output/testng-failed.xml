@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="Admin.PendingOrders_InProcess">
+        <methods>
+          <include name="pendingOrdersToInProcessTest"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- Admin.PendingOrders_InProcess -->
+    </classes>
+  </test> <!-- Test-chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="User.UpdateAddressPlaceOrder">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="updateAddressPlaceOrderTest"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- User.UpdateAddressPlaceOrder -->
+    </classes>
+  </test> <!-- Test-firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

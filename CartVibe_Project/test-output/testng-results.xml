@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launch the Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Close the Browser==]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-26T09:46:03 IST" name="Suite" finished-at="2024-11-26T09:47:12 IST" duration-ms="69045">
+    <groups>
+      <group name="systemTest">
+        <method signature="TodaysOrders_Delivered.todaysOrdersToInProcessTest()[pri:0, instance:Admin.TodaysOrders_Delivered@4c60d6e9]" name="todaysOrdersToInProcessTest" class="Admin.TodaysOrders_Delivered"/>
+        <method signature="PlaceOrderByInternetBanking.placeOrderByIBtest()[pri:0, instance:User.PlaceOrderByInternetBanking@24361cfc]" name="placeOrderByIBtest" class="User.PlaceOrderByInternetBanking"/>
+        <method signature="UpdateAddressPlaceOrder.updateAddressPlaceOrderTest()[pri:0, instance:User.UpdateAddressPlaceOrder@15ac59c2]" name="updateAddressPlaceOrderTest" class="User.UpdateAddressPlaceOrder"/>
+      </group> <!-- systemTest -->
+      <group name="integrationTest">
+        <method signature="PendingOrders_InProcess.pendingOrdersToInProcessTest()[pri:0, instance:Admin.PendingOrders_InProcess@712625fd]" name="pendingOrdersToInProcessTest" class="Admin.PendingOrders_InProcess"/>
+        <method signature="AddAProductToCart.addAProductToCartTest()[pri:0, instance:User.AddAProductToCart@7a7d1b47]" name="addAProductToCartTest" class="User.AddAProductToCart"/>
+      </group> <!-- integrationTest -->
+      <group name="smokeTest">
+        <method signature="UserCreateAccount.userCreateAccountTest()[pri:0, instance:User.UserCreateAccount@3fdecce]" name="userCreateAccountTest" class="User.UserCreateAccount"/>
+        <method signature="PlaceOrderByCOD.placeOrderTest()[pri:0, instance:User.PlaceOrderByCOD@34e20e6b]" name="placeOrderTest" class="User.PlaceOrderByCOD"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2024-11-26T09:46:03 IST" name="Test-chrome" finished-at="2024-11-26T09:46:54 IST" duration-ms="50977">
+      <class name="Admin.PendingOrders_InProcess">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:Admin.PendingOrders_InProcess@712625fd]" started-at="2024-11-26T09:46:03 IST" name="configBC" finished-at="2024-11-26T09:46:06 IST" duration-ms="2892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:Admin.PendingOrders_InProcess@712625fd]" started-at="2024-11-26T09:46:06 IST" name="configBM" finished-at="2024-11-26T09:46:08 IST" duration-ms="1732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="pendingOrdersToInProcessTest()[pri:0, instance:Admin.PendingOrders_InProcess@712625fd]" started-at="2024-11-26T09:46:08 IST" name="pendingOrdersToInProcessTest" finished-at="2024-11-26T09:46:35 IST" duration-ms="27193" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='dropdown-toggle']"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad7507ef3124561b51f249c381b04cbe, findElement {using=xpath, value=//a[@class='dropdown-toggle']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\manju-pc\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52080/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad7507ef3124561b51f249c381b04cbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='dropdown-toggle']"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad7507ef3124561b51f249c381b04cbe, findElement {using=xpath, value=//a[@class='dropdown-toggle']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\manju-pc\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52080/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad7507ef3124561b51f249c381b04cbe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at ObjectRepository.DashboardPage_Admin.logout(DashboardPage_Admin.java:43)
+at Admin.PendingOrders_InProcess.pendingOrdersToInProcessTest(PendingOrders_InProcess.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pendingOrdersToInProcessTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:Admin.PendingOrders_InProcess@712625fd]" started-at="2024-11-26T09:46:35 IST" name="configAC" finished-at="2024-11-26T09:46:35 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- Admin.PendingOrders_InProcess -->
+      <class name="Admin.TodaysOrders_Delivered">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:Admin.TodaysOrders_Delivered@4c60d6e9]" started-at="2024-11-26T09:46:35 IST" name="configBC" finished-at="2024-11-26T09:46:38 IST" duration-ms="2524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:Admin.TodaysOrders_Delivered@4c60d6e9]" started-at="2024-11-26T09:46:38 IST" name="configBM" finished-at="2024-11-26T09:46:40 IST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="todaysOrdersToInProcessTest()[pri:0, instance:Admin.TodaysOrders_Delivered@4c60d6e9]" started-at="2024-11-26T09:46:40 IST" name="todaysOrdersToInProcessTest" finished-at="2024-11-26T09:46:48 IST" duration-ms="8039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todaysOrdersToInProcessTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:Admin.TodaysOrders_Delivered@4c60d6e9]" started-at="2024-11-26T09:46:48 IST" name="configAC" finished-at="2024-11-26T09:46:48 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- Admin.TodaysOrders_Delivered -->
+      <class name="User.UserCreateAccount">
+        <test-method signature="userCreateAccountTest()[pri:0, instance:User.UserCreateAccount@3fdecce]" started-at="2024-11-26T09:46:48 IST" name="userCreateAccountTest" finished-at="2024-11-26T09:46:54 IST" duration-ms="5632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCreateAccountTest -->
+      </class> <!-- User.UserCreateAccount -->
+    </test> <!-- Test-chrome -->
+    <test started-at="2024-11-26T09:46:03 IST" name="Test-firefox" finished-at="2024-11-26T09:47:12 IST" duration-ms="69045">
+      <class name="User.AddAProductToCart">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:User.AddAProductToCart@7a7d1b47]" started-at="2024-11-26T09:47:00 IST" name="configBC" finished-at="2024-11-26T09:47:02 IST" duration-ms="2116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:User.AddAProductToCart@7a7d1b47]" started-at="2024-11-26T09:47:02 IST" name="configBM" finished-at="2024-11-26T09:47:04 IST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="addAProductToCartTest()[pri:0, instance:User.AddAProductToCart@7a7d1b47]" started-at="2024-11-26T09:47:04 IST" name="addAProductToCartTest" finished-at="2024-11-26T09:47:12 IST" duration-ms="7904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAProductToCartTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:User.AddAProductToCart@7a7d1b47]" started-at="2024-11-26T09:47:12 IST" name="configAC" finished-at="2024-11-26T09:47:12 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- User.AddAProductToCart -->
+      <class name="User.UpdateAddressPlaceOrder">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:User.UpdateAddressPlaceOrder@15ac59c2]" started-at="2024-11-26T09:46:50 IST" name="configBC" finished-at="2024-11-26T09:46:53 IST" duration-ms="2822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:User.UpdateAddressPlaceOrder@15ac59c2]" started-at="2024-11-26T09:46:53 IST" name="configBM" finished-at="2024-11-26T09:46:54 IST" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="updateAddressPlaceOrderTest()[pri:0, instance:User.UpdateAddressPlaceOrder@15ac59c2]" started-at="2024-11-26T09:46:54 IST" name="updateAddressPlaceOrderTest" finished-at="2024-11-26T09:47:00 IST" duration-ms="5762" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fa8826bd178d544c4679659172eae67, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\manju-pc\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52214/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fa8826bd178d544c4679659172eae67]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fa8826bd178d544c4679659172eae67, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\manju-pc\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52214/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fa8826bd178d544c4679659172eae67
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1107)
+at Generic.WebDriverUtility.WebDriverUtility.switchToAlertAndAccept(WebDriverUtility.java:58)
+at User.UpdateAddressPlaceOrder.updateAddressPlaceOrderTest(UpdateAddressPlaceOrder.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAddressPlaceOrderTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:User.UpdateAddressPlaceOrder@15ac59c2]" started-at="2024-11-26T09:47:00 IST" name="configAC" finished-at="2024-11-26T09:47:00 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- User.UpdateAddressPlaceOrder -->
+      <class name="User.PlaceOrderByCOD">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:User.PlaceOrderByCOD@34e20e6b]" started-at="2024-11-26T09:46:29 IST" name="configBC" finished-at="2024-11-26T09:46:31 IST" duration-ms="1883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:User.PlaceOrderByCOD@34e20e6b]" started-at="2024-11-26T09:46:31 IST" name="configBM" finished-at="2024-11-26T09:46:32 IST" duration-ms="1076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="placeOrderTest()[pri:0, instance:User.PlaceOrderByCOD@34e20e6b]" started-at="2024-11-26T09:46:32 IST" name="placeOrderTest" finished-at="2024-11-26T09:46:50 IST" duration-ms="17953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:User.PlaceOrderByCOD@34e20e6b]" started-at="2024-11-26T09:46:50 IST" name="configAC" finished-at="2024-11-26T09:46:50 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- User.PlaceOrderByCOD -->
+      <class name="User.PlaceOrderByInternetBanking">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:User.PlaceOrderByInternetBanking@24361cfc]" started-at="2024-11-26T09:46:03 IST" name="configBC" finished-at="2024-11-26T09:46:06 IST" duration-ms="2601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==Launch the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:User.PlaceOrderByInternetBanking@24361cfc]" started-at="2024-11-26T09:46:06 IST" name="configBM" finished-at="2024-11-26T09:46:08 IST" duration-ms="1866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="placeOrderByIBtest()[pri:0, instance:User.PlaceOrderByInternetBanking@24361cfc]" started-at="2024-11-26T09:46:08 IST" name="placeOrderByIBtest" finished-at="2024-11-26T09:46:28 IST" duration-ms="20740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderByIBtest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:User.PlaceOrderByInternetBanking@24361cfc]" started-at="2024-11-26T09:46:28 IST" name="configAC" finished-at="2024-11-26T09:46:29 IST" duration-ms="520" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Close the Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- User.PlaceOrderByInternetBanking -->
+    </test> <!-- Test-firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
